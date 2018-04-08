@@ -1,0 +1,18 @@
+{
+  "name": "Hidebull",
+  "version": "1.0",
+  "description": "Hide iDnes comment section to avoid bulls*",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "js": [
+        "contentscript.js"
+      ],
+      "matches": [
+        "http://*.idnes.cz/*",
+        "https://*.idnes.cz/*"
+      ]
+    }
+  ],
+  "web_accessible_resources": ["hide.js"]
+}
